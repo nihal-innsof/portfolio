@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Wudoo Mono";
+  src: url("/static/fonts/WudooMono-Bold.eot");
+  src:
+    local("Wudoo Mono Bold"),
+    local("WudooMono-Bold"),
+    url("/static/fonts/WudooMono-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/static/fonts/WudooMono-Bold.woff2") format("woff2"),
+    url("/static/fonts/WudooMono-Bold.woff") format("woff"),
+    url("/static/fonts/WudooMono-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Wudoo Mono";
+  src: url("/static/fonts/WudooMono-Regular.eot");
+  src:
+    local("Wudoo Mono Regular"),
+    local("WudooMono-Regular"),
+    url("/static/fonts/WudooMono-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/static/fonts/WudooMono-Regular.woff2") format("woff2"),
+    url("/static/fonts/WudooMono-Regular.woff") format("woff"),
+    url("/static/fonts/WudooMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Wudoo Mono";
+  src: url("/static/fonts/WudooMono-Light.eot");
+  src:
+    local("Wudoo Mono Light"),
+    local("WudooMono-Light"),
+    url("/static/fonts/WudooMono-Light.eot?#iefix") format("embedded-opentype"),
+    url("/static/fonts/WudooMono-Light.woff2") format("woff2"),
+    url("/static/fonts/WudooMono-Light.woff") format("woff"),
+    url("/static/fonts/WudooMono-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  font-family: "Wudoo Mono", monospace;
+}
+
+.section-heading {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section-sub-heading {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.section-label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3d3d3d;
+}
+
+.section-label-small {
+  font-size: 16px;
+  color: #3d3d3d;
+}
+
+.section-body-text,
+li {
+  font-size: 18px;
+  color: #3d3d3d;
+}
+
+li {
+  list-style-image: url("/static/assets/icons/point_scan.svg");
+  padding: 8px 0;
+}

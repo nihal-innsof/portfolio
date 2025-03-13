@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Wudoo Mono';
+    src: url('WudooMono-Bold.eot');
+    src: local('Wudoo Mono Bold'), local('WudooMono-Bold'),
+        url('WudooMono-Bold.eot?#iefix') format('embedded-opentype'),
+        url('WudooMono-Bold.woff2') format('woff2'),
+        url('WudooMono-Bold.woff') format('woff'),
+        url('WudooMono-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Wudoo Mono';
+    src: url('WudooMono-Regular.eot');
+    src: local('Wudoo Mono Regular'), local('WudooMono-Regular'),
+        url('WudooMono-Regular.eot?#iefix') format('embedded-opentype'),
+        url('WudooMono-Regular.woff2') format('woff2'),
+        url('WudooMono-Regular.woff') format('woff'),
+        url('WudooMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Wudoo Mono';
+    src: url('WudooMono-Light.eot');
+    src: local('Wudoo Mono Light'), local('WudooMono-Light'),
+        url('WudooMono-Light.eot?#iefix') format('embedded-opentype'),
+        url('WudooMono-Light.woff2') format('woff2'),
+        url('WudooMono-Light.woff') format('woff'),
+        url('WudooMono-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
