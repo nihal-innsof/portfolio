@@ -1,0 +1,1 @@
+<section :class=\"darkMode ? &#39;bg-black text-white&#39; : &#39;bg-white text-black&#39;\" class=\"rounded-lg flex flex-col main-section mx-4 my-10 md:mx-38 md:p-14 xl:mx-72 xl:p-16\">Testing</section>

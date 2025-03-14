@@ -29,7 +29,7 @@ func Footer() templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<div class=\"footer flex flex-col w-full items-center mb-16 px-4 text-center\"><img src=\"/static/assets/icons/sun.svg\" alt=\"Sun image\" width=\"46.83\" height=\"48\"><p class=\"section-label-small mt-6 \">You reached End, Thanks for Showing Interest in my profile. </p><p id=\"distortion-text\">Have A Great Day!</p></div><script src=\"/static/js/footer.js\"></script>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<div class=\"footer flex flex-col w-full items-center mb-16 px-4 text-center\"><img src=\"/static/assets/icons/sun.svg\" alt=\"Sun image\" width=\"46.83\" height=\"48\"><p :class=\"darkMode ? &#39;text-[#c1c1c1]&#39; : &#39;&#39;\" class=\"section-label-small mt-6 \">You reached End, Thanks for Showing Interest in my profile. </p><p id=\"distortion-text\">Have A Great Day!</p></div><script src=\"/static/js/footer.js\"></script>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
