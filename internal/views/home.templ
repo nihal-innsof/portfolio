@@ -2,15 +2,17 @@ package views
 
 templ HomeView() {
 	@Base() {
-		<section class="flex flex-col  main-section mx-4 my-10 md:mx-40 md:p-16 xl:mx-72 xl:p-16">
-			<div>
-				<h2 class="section-heading">Nihal Abdulla</h2>
+		<section :class="darkMode ? 'bg-black text-white' : 'bg-white text-black'" class="rounded-lg flex flex-col main-section mx-4 my-10 md:mx-38 md:p-14 xl:mx-72 xl:p-16">
+			<div class="intro">
+				<h2 class="section-heading name">Nihal Abdulla</h2>
 				<p class="section-body-text">Fullstack Developer</p>
-				<p class="section-body-text pt-4">Hey I’m a highly motivated Full-stack Developer with 3+ years of experience delivering secure and user-centric applications. Proficient in Flutter, React, and backend technologies like Spring Boot, Golang, ASP.Net Core, and Node.js. Adept at integrating secure coding practices and enhancing development pipelines through automation and CI/CD processes. Passionate about cybersecurity.</p>
+				<p class="section-body-text pt-4">
+					Hi, I’m a highly motivated Full-stack Developer with 3+ years of experience delivering secure and user-centric applications. Proficient in <b>Flutter</b>, <b>React</b>, and backend technologies like <b>Spring Boot</b>, <b>Golang</b>, <b>ASP.Net Core</b> and <b>Node.js</b>. Adept at integrating secure coding practices and enhancing development pipelines through automation and CI/CD processes. I am also passionate about cybersecurity.
+				</p>
 			</div>
-			<div class="mt-14">
+			<div class="mt-14 experience">
 				<h2 class="section-heading">Experience_</h2>
-				<div>
+				<div class="exp-1">
 					<p class="section-label mt-10">Software Engineer</p>
 					<h3 class="section-sub-heading">Innsof Private Ltd</h3>
 					<p class="section-label-small">Aug 2023 - May 2025</p>
@@ -21,7 +23,7 @@ templ HomeView() {
 						<li>Developed secure, scalable APIs using Golang, contributing to enterprise-grade software solutions.</li>
 					</ul>
 				</div>
-				<div>
+				<div class="exp-2">
 					<p class="section-label mt-10">Solutions Engineer</p>
 					<h3 class="section-sub-heading">ColorBracket Technologies</h3>
 					<p class="section-label-small">May 2022 - Oct 2022</p>
@@ -30,7 +32,7 @@ templ HomeView() {
 						<li>Provided technical consultations to improve system scalability and performance.</li>
 					</ul>
 				</div>
-				<div>
+				<div class="exp-3">
 					<p class="section-label mt-10">Fullstack Developer</p>
 					<h3 class="section-sub-heading">Freelancer</h3>
 					<p class="section-label-small">Jan 2021 - May 2022</p>
@@ -41,14 +43,34 @@ templ HomeView() {
 					</ul>
 				</div>
 			</div>
-			<div class="mt-14">
+			<div class="mt-14 education">
 				<h2 class="section-heading">Education_</h2>
 				<div>
 					<p class="section-label mt-10">B.Tech (Computer Science)</p>
-					<h3 class="section-sub-heading">MEA Engineering College</h3>
+					<div class="flex justify-between">
+						<h3 class="section-sub-heading">MEA Engineering College</h3>
+						<span>CGPA: <b>6.89</b></span>
+					</div>
 					<p class="section-label-small">2017 - 2021</p>
 				</div>
 			</div>
+			<div class="mt-14 certifications">
+				<h2 class="section-heading">Certifications_</h2>
+				<div>
+					<div class="flex mt-10 space-x-2">
+						<p class="section-label">Coursera</p>
+						<span class="material-symbols-outlined text-blue-700">
+							verified
+						</span>
+					</div>
+					<div class="flex justify-between">
+						<h3 class="section-sub-heading">Introduction to cybersecurity Tools & Cyberattacks</h3>
+						<a class="underline text-blue-500" href="https://www.coursera.org/account/accomplishments/verify/VVE9386KH2W2">Verify</a>
+					</div>
+					<p class="section-label-small">2021</p>
+				</div>
+			</div>
 		</section>
+		<script src="/static/js/home.js"></script>
 	}
 }

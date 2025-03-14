@@ -1,0 +1,9 @@
+package partials
+
+templ Navbar() {
+	<div class="w-full flex justify-end pt-8 pr-8">
+		<div x-on:click="darkMode = !darkMode; localStorage.setItem('darkMode', darkMode)" class="cursor-pointer">
+			<span x-text="darkMode ? 'light_mode' : 'dark_mode'" :class="darkMode ? 'text-white' : 'text-black'" class="material-symbols-outlined"></span>
+		</div>
+	</div>
+}

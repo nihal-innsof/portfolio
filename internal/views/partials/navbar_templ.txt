@@ -1,0 +1,1 @@
+<div class=\"w-full flex justify-end pt-8 pr-8\"><div x-on:click=\"darkMode = !darkMode; localStorage.setItem(&#39;darkMode&#39;, darkMode)\" class=\"cursor-pointer\"><span x-text=\"darkMode ? &#39;light_mode&#39; : &#39;dark_mode&#39;\" :class=\"darkMode ? &#39;text-white&#39; : &#39;text-black&#39;\" class=\"material-symbols-outlined\"></span></div></div>
